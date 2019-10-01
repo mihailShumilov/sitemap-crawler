@@ -18,7 +18,7 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "php": "^7.3s.0"
+        "php": "^7.2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.3@dev",
