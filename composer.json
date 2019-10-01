@@ -8,6 +8,20 @@
             "email": "mschumilow@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Crawler\\": "src/Crawler"
+        },
+        "classmap": [
+            "src/Crawler/"
+        ]
+    },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": "^7.3s.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.3@dev",
+        "symfony/var-dumper": "^5.0@dev"
+    }
 }
