@@ -1,0 +1,13 @@
+{
+    "name": "mihailshumilov/sitemap-crawler",
+    "description": "Crawl all website links by sitemap",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mihail Shumilov",
+            "email": "mschumilow@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
