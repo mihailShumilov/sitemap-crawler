@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d33c257e-8b73-46c5-b3c7-dc1cc05754c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap09.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Crawler/Sitemap/SitemapInterface.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Crawler/Crawler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crawler/Crawler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap09.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap09.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +114,7 @@
       <updated>1569953967747</updated>
       <workItem from="1569953969039" duration="3184000" />
       <workItem from="1570001320591" duration="718000" />
-      <workItem from="1570116038212" duration="4606000" />
+      <workItem from="1570116038212" duration="5431000" />
     </task>
     <task id="LOCAL-00001" summary="start crawler">
       <created>1569955720177</created>
@@ -139,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570117055129</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="start sitemap">
+      <created>1570135480186</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570135480186</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,13 +167,18 @@
     <MESSAGE value="start crawler" />
     <MESSAGE value="add require dev" />
     <MESSAGE value="prepare base for testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepare base for testing" />
+    <MESSAGE value="start sitemap" />
+    <option name="LAST_COMMIT_MESSAGE" value="start sitemap" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PHPUnitRunConfigurationType">
-        <watch expression="array_map('strtolower', $attributes)" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap09.php</url>
+          <line>13</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

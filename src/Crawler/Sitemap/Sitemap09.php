@@ -4,17 +4,28 @@
 namespace Crawler\Sitemap;
 
 
+use Symfony\Component\VarDumper\VarDumper;
+
 class Sitemap09 extends Sitemap {
+
+    private $isLock = false;
+
     public function startElement($xmlParser, string $name, array $attributes): void {
-        // TODO: Implement startElement() method.
+        if($name === self::NODE_LOC){
+            $this->isLock = true;
+        }
     }
 
     public function endElement($xmlParser, string $name): void {
-        // TODO: Implement endElement() method.
+        if($name === self::NODE_LOC){
+            $this->isLock = false;
+        }
     }
 
     public function characterData($xmlParser, $data): void {
-        // TODO: Implement characterData() method.
+        if($this->isLock){
+            echo "LOC: {$data}\n";
+        }
     }
 
 }

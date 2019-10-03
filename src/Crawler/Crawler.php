@@ -71,8 +71,9 @@ class Crawler {
     protected function startElement($xml_parser, $name, $attributes): void {
         if ($name === self::NODE_SITEMAPINDEX) {
             if (isset($attributes[self::ATTR_XMLNS])) {
-                VarDumper::dump($attributes);
                 $this->sitemapParser = Sitemap::create($attributes[self::ATTR_XMLNS]);
+                xml_set_element_handler($this->xmlParser, [$this->sitemapParser, 'startElement'], [$this->sitemapParser, 'endElement']);
+                xml_set_character_data_handler($this->xmlParser, [$this->sitemapParser, 'characterData']);
             }
         }
     }
