@@ -1,0 +1,5 @@
+https://censor.net.ua/includes/sitemap_ru.xml
+https://www.unian.ua/sitemap.xml
+https://znaj.ua/ru/sitemap.xml
+https://politeka.net/sitemap.xml
+https://strana.ua/sitemap.xml

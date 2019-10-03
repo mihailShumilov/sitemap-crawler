@@ -1,27 +1,39 @@
 {
-    "name": "mihailshumilov/sitemap-crawler",
-    "description": "Crawl all website links by sitemap",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mihail Shumilov",
-            "email": "mschumilow@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Crawler\\": "src/Crawler"
-        },
-        "classmap": [
-            "src/Crawler/"
-        ]
-    },
-    "minimum-stability": "dev",
-    "require": {
-        "php": "^7.2.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.3@dev",
-        "symfony/var-dumper": "^5.0@dev"
+  "version": "0.0.1",
+  "type": "library",
+  "name": "mihailshumilov/sitemap-crawler",
+  "description": "Crawl all website links by sitemap",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mihail Shumilov",
+      "email": "mschumilow@gmail.com"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Crawler\\": "src/Crawler"
+    },
+    "classmap": [
+      "src/Crawler/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Crawler\\": "tests/Crawler"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.3@dev",
+    "symfony/var-dumper": "^5.0@dev"
+  },
+  "scripts": {
+    "test": [
+      "./vendor/bin/phpunit"
+    ]
+  }
 }
