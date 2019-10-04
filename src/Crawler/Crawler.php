@@ -10,6 +10,7 @@ use Symfony\Component\VarDumper\VarDumper;
 class Crawler {
 
     public const NODE_SITEMAPINDEX = 'SITEMAPINDEX';
+    public const NODE_URLSET       = 'URLSET';
 
 
     public const ATTR_XMLNS = 'XMLNS';
@@ -22,6 +23,9 @@ class Crawler {
 
     private $sitemapFh;
 
+    /**
+     * @var Sitemap
+     */
     private $sitemapParser;
 
     /**
@@ -69,10 +73,11 @@ class Crawler {
     }
 
     protected function startElement($xml_parser, $name, $attributes): void {
-        if ($name === self::NODE_SITEMAPINDEX) {
+        if ($name === self::NODE_SITEMAPINDEX || $name = self::NODE_URLSET) {
             if (isset($attributes[self::ATTR_XMLNS])) {
                 $this->sitemapParser = Sitemap::create($attributes[self::ATTR_XMLNS]);
-                xml_set_element_handler($this->xmlParser, [$this->sitemapParser, 'startElement'], [$this->sitemapParser, 'endElement']);
+                xml_set_element_handler($this->xmlParser, [$this->sitemapParser, 'startElement'],
+                                        [$this->sitemapParser, 'endElement']);
                 xml_set_character_data_handler($this->xmlParser, [$this->sitemapParser, 'characterData']);
             }
         }
@@ -86,5 +91,12 @@ class Crawler {
 
     }
 
+    public function getLinks(){
+        if($this->sitemapParser) {
+            return $this->sitemapParser->getLinksList();
+        }else{
+            return [];
+        }
+    }
 
 }

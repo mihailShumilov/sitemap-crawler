@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/src/Crawler/Crawler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crawler/Crawler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap09.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap09.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Crawler/CrawlerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Crawler/CrawlerTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -76,12 +77,13 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tests/resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/resources" />
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -114,7 +116,8 @@
       <updated>1569953967747</updated>
       <workItem from="1569953969039" duration="3184000" />
       <workItem from="1570001320591" duration="718000" />
-      <workItem from="1570116038212" duration="5431000" />
+      <workItem from="1570116038212" duration="5926000" />
+      <workItem from="1570202607249" duration="4414000" />
     </task>
     <task id="LOCAL-00001" summary="start crawler">
       <created>1569955720177</created>
@@ -144,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570135480186</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="start detecting loc">
+      <created>1570136378312</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570136378312</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,17 +178,7 @@
     <MESSAGE value="add require dev" />
     <MESSAGE value="prepare base for testing" />
     <MESSAGE value="start sitemap" />
-    <option name="LAST_COMMIT_MESSAGE" value="start sitemap" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/Crawler/Sitemap/Sitemap09.php</url>
-          <line>13</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="start detecting loc" />
+    <option name="LAST_COMMIT_MESSAGE" value="start detecting loc" />
   </component>
 </project>
